@@ -1,10 +1,10 @@
 ### Java template
 # Compiled class file
 *.class
-/configuration.properties/
+
 # Log file
 *.log
-/pom.xml/
+
 # BlueJ files
 *.ctxt
 
@@ -19,8 +19,7 @@
 *.zip
 *.tar.gz
 *.rar
-*.properties
-*.xml
+
 /target/
 
 .idea
