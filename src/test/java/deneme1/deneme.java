@@ -5,5 +5,6 @@ public class deneme {
         System.out.println("onurenes");
         System.out.println("onurenes");
         System.out.println("onurenes");
+        System.out.println("esra");
     }
 }
