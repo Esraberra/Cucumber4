@@ -22,6 +22,13 @@ public class bookingPage extends BasePage {
     public WebElement guestCount;
 
 
+    @FindBy(className = "sb-searchbox__button ")
+    public WebElement searchButton;
+
+    @FindBy(className = "sb-group-field-has-error")
+    public WebElement childrenAge;
+
+
 
 
 }
