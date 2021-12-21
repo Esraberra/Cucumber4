@@ -26,13 +26,13 @@ public class AmazonRegisterStepDefinitions {
 
     }
 
-    @Then("click {string} link")
+    @Then("click startHereLink link")
     public void clickStartHereLink() {
 
         page.startHereLink.click();
     }
 
-    @And("fill the {string} part {string}, {string},{string},{string}")
+    @And("fill the create account part {string}, {string},{string},{string}")
     public void fillTheCreateAccountPart(String name, String email, String password, String passwordCheck) {
 
         page.nameInput.sendKeys(name);
