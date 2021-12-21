@@ -22,7 +22,8 @@
 *.properties
 *.xml
 /target/
-
+/configuration.properties/
+/pom.xml/
 .idea
 /*.iml
 /*.log
