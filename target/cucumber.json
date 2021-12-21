@@ -1,1 +1,75 @@
-[]
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-12-21T14:46:14.809Z",
+        "line": 3,
+        "name": "musteri booking sayfasinda hotel rezervasyonu yapar ve kücükten büyüge listeleyebilir",
+        "description": "",
+        "id": "booking-otel-rezervasyonu;musteri-booking-sayfasinda-hotel-rezervasyonu-yapar-ve-kücükten-büyüge-listeleyebilir",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "Musteri \"bookingUrl\" sayfayı acar",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 6,
+            "name": "Anasayfadaki Hotels linkine tıklar",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "\"Where are you going ?\" bölümüne \"New York” yazar",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "22 Aralık ile 25 Aralık tarihleri arasında \"2\" Yetişkin ve \"12\" yaşında bir çocuk için hotel araması yapılabilmeli.",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "Sonuc sayfasına gecince \"Price (lowestfirst)\" butonuna tıklayabilmeli ve sonuçları görebilmelidir.",
+            "match": {},
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@booking"
+          }
+        ]
+      }
+    ],
+    "name": "Booking otel rezervasyonu",
+    "description": "",
+    "id": "booking-otel-rezervasyonu",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/booking.feature",
+    "tags": []
+  }
+]
