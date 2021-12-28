@@ -1,75 +1,86 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-12-21T14:46:14.809Z",
-        "line": 3,
-        "name": "musteri booking sayfasinda hotel rezervasyonu yapar ve kücükten büyüge listeleyebilir",
+        "line": 4,
+        "name": "Api Datalari ayarlama",
         "description": "",
-        "id": "booking-otel-rezervasyonu;musteri-booking-sayfasinda-hotel-rezervasyonu-yapar-ve-kücükten-büyüge-listeleyebilir",
-        "type": "scenario",
-        "keyword": "Scenario",
+        "type": "background",
+        "keyword": "Background",
         "steps": [
           {
             "result": {
               "status": "undefined"
             },
-            "line": 5,
-            "name": "Musteri \"bookingUrl\" sayfayı acar",
+            "line": 7,
+            "name": "Kullanici Api endpointe gidecek \"https://www.gmibank.com/api/tp-customers?\u003dsize\u003d2000\" datalari alacak",
             "match": {},
-            "keyword": "When "
-          },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-12-27T12:01:05.431Z",
+        "line": 8,
+        "name": "Apiden data alma ve onaylama",
+        "description": "",
+        "id": "api-data-okuma;apiden-data-alma-ve-onaylama",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
+              "duration": 246000,
               "status": "skipped"
             },
-            "line": 6,
-            "name": "Anasayfadaki Hotels linkine tıklar",
+            "line": 9,
+            "name": "Kullanici müsteri datalari alir",
             "match": {},
             "keyword": "Given "
           },
           {
             "result": {
+              "duration": 200000,
               "status": "skipped"
             },
-            "line": 7,
-            "name": "\"Where are you going ?\" bölümüne \"New York” yazar",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "name": "22 Aralık ile 25 Aralık tarihleri arasında \"2\" Yetişkin ve \"12\" yaşında bir çocuk için hotel araması yapılabilmeli.",
-            "match": {},
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 1000000,
-              "status": "skipped"
-            },
-            "line": 9,
-            "name": "Sonuc sayfasına gecince \"Price (lowestfirst)\" butonuna tıklayabilmeli ve sonuçları görebilmelidir.",
+            "line": 10,
+            "name": "kullanici aldigi datalari kaydeder",
             "match": {},
             "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 285000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "kullanici Customer datalarini onaylar",
+            "match": {},
+            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@booking"
+            "name": "@gmiBankApi1"
           }
         ]
       }
     ],
-    "name": "Booking otel rezervasyonu",
+    "name": "Api Data okuma",
     "description": "",
-    "id": "booking-otel-rezervasyonu",
+    "id": "api-data-okuma",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/booking.feature",
-    "tags": []
+    "uri": "file:src/test/resources/features/gmiBank.feature",
+    "tags": [
+      {
+        "name": "@gmiBankApi1",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
