@@ -27,7 +27,8 @@ public class GmiBankApi1 {
 
     @Given("Kullanici Api endpointe gidecek {string} datalari alacak")
     public void kullanici_api_endpointe_gidecek_datalari_alacak(String url) {
-        response=given().headers("Authorization",
+        response=given().headers(
+                "Authorization",
                 "Bearer " + bearerToken,
                 "Content-Type",
                 ContentType.JSON,
@@ -35,6 +36,7 @@ public class GmiBankApi1 {
                 ).when().get(url).
                 then().contentType(ContentType.JSON).extract().response();
 response.prettyPrint();
+
     }
 
 
@@ -72,6 +74,7 @@ expectedList.add("821-84-3971");
        List<String> actualSsnList= ReadTxt.returnCustomerSNNList(fileName);
 
         Assert.assertTrue("SSN DOESNT MATCH",actualSsnList.containsAll(expectedList));
+
     }
 
 }

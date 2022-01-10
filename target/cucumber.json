@@ -3,78 +3,39 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "Api Datalari ayarlama",
+        "start_timestamp": "2022-01-08T14:03:46.107Z",
+        "line": 3,
+        "name": "company secme",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7,
-            "name": "Kullanici Api endpointe gidecek \"https://www.gmibank.com/api/tp-customers?\u003dsize\u003d2000\" datalari alacak",
-            "match": {},
-            "keyword": "Given "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2021-12-27T12:01:05.431Z",
-        "line": 8,
-        "name": "Apiden data alma ve onaylama",
-        "description": "",
-        "id": "api-data-okuma;apiden-data-alma-ve-onaylama",
+        "id": "demoguru;company-secme",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 246000,
-              "status": "skipped"
+              "status": "undefined"
             },
-            "line": 9,
-            "name": "Kullanici müsteri datalari alir",
+            "line": 4,
+            "name": "Demo guru sitesine gider ve bir company secer",
             "match": {},
             "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 200000,
-              "status": "skipped"
-            },
-            "line": 10,
-            "name": "kullanici aldigi datalari kaydeder",
-            "match": {},
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 285000,
-              "status": "skipped"
-            },
-            "line": 11,
-            "name": "kullanici Customer datalarini onaylar",
-            "match": {},
-            "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@gmiBankApi1"
+            "name": "@demoguru"
           }
         ]
       }
     ],
-    "name": "Api Data okuma",
+    "name": "demoguru",
     "description": "",
-    "id": "api-data-okuma",
+    "id": "demoguru",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/gmiBank.feature",
+    "uri": "file:src/test/resources/features/DemoGuru.feature",
     "tags": [
       {
-        "name": "@gmiBankApi1",
+        "name": "@demoguru",
         "type": "Tag",
         "location": {
           "line": 1,
