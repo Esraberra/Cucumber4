@@ -22,7 +22,7 @@ datas.put("deneme",1234);
 datas.put("isim","Esra");
 
 request.body(datas.toString());
-request.when().post("","");
+request.when().post();
 
 
 //queryparams bölümüne nasil data eklenir?
