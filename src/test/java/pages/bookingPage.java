@@ -1,8 +1,20 @@
 package pages;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.FindBys;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.FluentWait;
+import org.openqa.selenium.support.ui.Wait;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import utilities.Driver;
+
+import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.concurrent.TimeUnit;
 
 public class bookingPage extends BasePage {
 
@@ -65,6 +77,40 @@ public WebElement ara;
 
 @FindBy(partialLinkText = "Fiyat (önce en düşük)")
     public WebElement priceLow;
+
+
+private static By calendar= By.id("calendar");
+
+private static By baltikDeniz=By.xpath("//span[contains(text(),'Deniz')]");
+
+public static String getBaltikDenizText(By locator)
+{
+
+    WebElement element = Driver.getDriver().findElement(locator);
+    Wait<WebDriver> wait=new FluentWait<WebDriver>(Driver.getDriver()).
+            withTimeout(Duration.ofSeconds(10)).
+            pollingEvery(Duration.ofSeconds(2)).withMessage("method failed");
+    wait.until(ExpectedConditions.visibilityOf(element)).getText();
+
+
+
+    return element.getText();
+
+
+}
+
+    public static void main(String[] args) throws NoSuchMethodException {
+        WebDriverWait wait=new WebDriverWait(Driver.getDriver(),15);
+        wait.until(ExpectedConditions.elementToBeClickable(baltikDeniz));
+
+
+        //bir kelimenin uzunluugunu hesaplama
+
+
+
+
+    }
+
 
 
 }
